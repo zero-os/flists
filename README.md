@@ -7,4 +7,4 @@ The goal is to add the produced binary to [gig-autobuilder](https://hub.gig.tech
 
 See build monitoring and history [here](https://build.gig.tech/).
 
-See avalible flists [here](https://hub.gig.tech/gig-autobuilder/).
+See available flists [here](https://hub.gig.tech/gig-autobuilder/).
