@@ -8,7 +8,7 @@ curl -O https://nmap.org/dist/nmap-7.70.tar.bz2
 bzip2 -cd nmap-7.70.tar.bz2 | tar xvf -
 cd nmap-7.70
 ./configure
-make
+make -j $(grep -c 'bogomips' /proc/cpuinfo)
 
 mkdir -p /tmp/archives/
-tar cvfz "/tmp/archives/nmap.tar.gz" --transform "s,^,usr/bin/," nmap
+tar cfz "/tmp/archives/nmap.tar.gz" --transform "s,^,usr/bin/," nmap
